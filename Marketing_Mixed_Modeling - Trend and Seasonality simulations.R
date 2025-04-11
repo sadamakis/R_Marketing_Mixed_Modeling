@@ -11,13 +11,13 @@
 #     ii) Have a binary variable for each month, e.g. Feb, Mar, ..., Dec
 #2) i) Decompose the time series first using y~t+s. 
 #   ii) Regress the independent variables on the residuals, y.res~x+t+s. 
-#3) i) Decmpose the time series first using 'decompose' function in R (instead of 'stl' function). Note that this approach drops some data.
+#3) i) Decompose the time series first using 'decompose' function in R (instead of 'stl' function). Note that this approach drops some data.
 #   ii) Regress the independent variables on the residuals (random part of the decomposition), y.res~x+t+s. 
 #4) i) Decompose both dependent and independent variables using any of the above two methods.
 #   ii) Regress the errors of the independent variables on the errors of the dependent variables, y.res~x.res+t+s. 
 
 # NOTE 1: R^2 can be inflated because of the t and s terms. Therefore, in order to calculate the R^2 from the 
-#       independent variables only, then we should decompose the dependent variable first, and then regress the independent variables on the erros, i.e. approaches 2, 3, 4 above. 
+#       independent variables only, then we should decompose the dependent variable first, and then regress the independent variables on the errors, i.e. approaches 2, 3, 4 above. 
 # NOTE 2: Approach 1 and 4 should give the same coefficients for the independent variables. 
 ##########################################################################
 ##########################################################################

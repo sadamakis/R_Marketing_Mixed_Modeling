@@ -584,7 +584,7 @@ auto.arima(residuals(step.model))
 # The ARIMA(3,0,2) model suggests that there might be up to order 3 lag of the dependent variable. We start with lag 1 (Y_t-1), check results, if needed lag 2, check results, if needed lag 3, check results, etc.  
 
 #############################################################################
-# In oder to fix the autocorrelation, we insert the dependent variale lag into our model
+# In oder to fix the autocorrelation, we insert the dependent variable lag into our model
 #############################################################################
 # Calculate the best model
 mmm.data.autocorrelation = data %>% 
